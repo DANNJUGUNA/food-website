@@ -2,7 +2,23 @@ import React from 'react'
 import {data} from '../data/data'
 const Food = () => {
   return (
-    <div>Food</div>
+    <div>
+        <h1>Top Rated Menus</h1>
+        {/* {c} */}
+        <div>
+          <p>Filter With </p>
+          <div>
+            <button>ALL</button>
+            <button>Burgers</button>
+            <button>Pizza</button>
+            <button>Salads</button>
+            <button>Chicken</button>
+          </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
   )
 }
 
