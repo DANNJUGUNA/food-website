@@ -17,6 +17,12 @@ const Food = () => {
         </div>
         <div>
             <p>Filter with Price</p>
+            <div>
+                <button>$</button>
+                <button>$$</button>
+                <button>$$$</button>
+                <button>$$$$</button>
+            </div>
         </div>
     </div>
   )
