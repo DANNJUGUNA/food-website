@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import {data} from '../data/data.js'
 const Food = () => {
     const[foods,setFoods]=useState(data)
-    console.log(foods)
   return (
-    <div className=' max-w-[1240px] m-auto px-4 py-6'>
+    <div className=' max-w-[1640px] m-auto px-4 py-6'>
         <h1 className=' text-red-600 font-bold text-4xl text-center'>Our Top Rated Menus</h1>
         {/* {c} */}
 
@@ -60,9 +59,25 @@ const Food = () => {
                    $$$$
                 </button>
             </div>
+        </div>           
         </div>
-        
 
+
+
+        <div className=' grid grid-cols-2 lg:grid-cols-5 pt-5  gap-6'>
+        {foods.map((food,index)=>(
+                      <div key={index} className=" border shadow-xl rounded-t-lg hover:scale-105 duration-300">
+                        <img src={food.image} alt={food.name} 
+                        className='w-full h-[230px] object-cover rounded-lg'
+                        />
+                        <div className='flex justify-between px-2 py-4'>
+                            <p className=' font-semibold'>{food.name}</p>
+                            <p>
+                                <span className='bg-red-600 rounded-full p-1 text-white font-semibold'>{food.price}</span>
+                            </p>
+                        </div>
+                      </div>
+             ))} 
         </div>
     </div>
   )
