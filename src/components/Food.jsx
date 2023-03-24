@@ -16,7 +16,7 @@ const Food = () => {
           </div>
         </div>
         <div>
-
+            <p>Filter with Price</p>
         </div>
     </div>
   )
