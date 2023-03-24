@@ -6,7 +6,7 @@ const Food = () => {
         <h1>Top Rated Menus</h1>
         {/* {c} */}
         <div>
-          <p>Filter With </p>
+          <p>Filter With Category</p>
           <div>
             <button>ALL</button>
             <button>Burgers</button>
