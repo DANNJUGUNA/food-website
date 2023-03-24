@@ -7,8 +7,7 @@ import {FaUserFriends, FaWallet} from 'react-icons/fa'
 const Navbar = () => {
     const[navclose, setNavClose]=useState(false)
   return (
-    <header className='py-3 mb-11 border-b '>
-    <div className='max-w-[1340px] mx-auto mr-3 ml-3 flex justify-between items-center p-3'>
+    <div className='max-w-[1240px] mx-auto mr-3 ml-3 flex justify-between items-center p-4'>
         <div className=' flex items-center gap-3'>
         <div onClick={()=>setNavClose(!navclose)} className=' cursor-pointer'>
             <AiOutlineMenu size={35}/>
@@ -56,8 +55,6 @@ const Navbar = () => {
                 </nav>
             </div>
        </div>
-    
-    </header>
   )
 }
 
