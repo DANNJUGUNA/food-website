@@ -12,7 +12,7 @@ function App() {
       <Hero/>
       <HeadlinesCards/>
       <Food/>
-      <Category/>
+      
     </div>
   );
 }
